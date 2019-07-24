@@ -20,5 +20,5 @@ Person  |
 Bike  | good_condition?
 Docking_station | bike_release
 
-Person -> Docking_station -> bike_release
+Person -> Docking_station -> bike_release  
 Person -> Bike -> good_condition?
