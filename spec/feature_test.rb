@@ -4,10 +4,8 @@ require_relative '../lib/docking_station.rb'
 
 station = DockingStation.new
 
-20.times do
-  station.dock(Bike.new)
-  puts "Done, bike docked!"
-end
+p station.capacity
 
-# Expecting this to fail as capacity is 20
-station.dock(Bike.new)
+station_bigger = DockingStation.new(40)
+
+p station_bigger.capacity
